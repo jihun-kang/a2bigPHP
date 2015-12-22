@@ -8,10 +8,11 @@
  * @version 1.0
  * @Copyright 2012 a2big.com
  */
-
 include_once("include/index.php");  
+
 $urlInterpreter = new UrlInterpreter();
 $command = $urlInterpreter->getCommand();
-$commandDispatcher = new CommandDispatcher($command);
+$commandDispatcher = new CommandDispatcher($command,$url);
 $commandDispatcher->Dispatch();
+
 ?>

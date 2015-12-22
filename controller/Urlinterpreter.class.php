@@ -9,6 +9,7 @@
   * @version 1.0
   * @Copyright 2012 a2big.com
   */
+include_once("model/Model.php");  
 
 class UrlInterpreter 
 	{
