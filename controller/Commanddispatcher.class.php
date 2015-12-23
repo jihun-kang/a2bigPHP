@@ -8,15 +8,13 @@
   * @version 1.0
   * @Copyright 2012 a2big.com
   */
-include_once("setting/url.inc.php");  
-include_once("controller/Controller.class.php");  
 
 
 class MyClass
 {
     function callbackMethod()
     {
-        return "hoge";
+        return "<br>callback...hoge<br>";
     }
     static function staticCallbackMethod()
     {

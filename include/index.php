@@ -9,13 +9,13 @@
   * @version 1.0
   * @Copyright 2012 a2big.com
   */
- 
-require_once("setting/global.inc.php");
+require_once(dirname(__DIR__)."/setting/global.inc.php");
 require($path."/setting/db_config.inc.php"); 
 require($path."/database/Database.class.php"); 
 require_once($path."/view/Template.class.php");
 include($path."/controller/Command.class.php");
 include($path."/controller/Urlinterpreter.class.php");
 include($path."/controller/Commanddispatcher.class.php");
-
+include_once($path."/controller/Controller.class.php");  
+include_once($path."/setting/url.inc.php");  
 ?>

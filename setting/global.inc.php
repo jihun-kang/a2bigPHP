@@ -11,7 +11,8 @@
 
 $proto = "http://a2bigPHP.a2big.com";
 $sitepath = $proto."/";
-$path = "/home/a2big/git/framework/a2bigPHP";
+//$path = "/home/a2big/git/framework/a2bigPHP";
+$path = dirname(__DIR__);
 $sitename = "";
 $organization = "a2big Co.. Ltd.";
 	
