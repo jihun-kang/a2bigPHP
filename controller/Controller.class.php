@@ -17,22 +17,33 @@ class Controller {
 	var $subToken; 
  	var $parameters;
   
+  
+  
+  
      public function __construct()    
      {    
           $this->model = new Model();  
      }   
-      
-     public function invoke($token,$parameters)  
-     { 
-		 $this->token 	  = $token;
-		 $this->subToken =  current($parameters);
-		 array_splice($parameters, 0, 1);
-		 $this->parameters = $parameters;
-		 $this->procFunc();
-     }  
+     
+	 public function setParameters($token, $parameters){
+		 //token
+		 $this->token = $token;
+		 $this->parameters  = array_diff( $parameters, array( '' ) );
+		 
+		 //subtoken
+		 // $this->subToken =  current($parameters);
+		 $this->subToken =  $this->array_last($this->parameters);
+	 }
 	 
-	 function procFunc(){
-		 echo "procFunc>>><br>";
+	
+ 	function array_last($array) {
+ 	    if (count($array) < 1)
+ 	        return null;
+ 	    return $array[count($array) - 1];
+ 	}
+	
+	function procFunc(){	
+		 
 		 switch($this->subToken){
 			 case 'user':
 				 $this->debug_param();

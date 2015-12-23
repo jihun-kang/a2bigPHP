@@ -9,19 +9,6 @@
   * @Copyright 2012 a2big.com
   */
 
-
-class MyClass
-{
-    function callbackMethod()
-    {
-        return "<br>callback...hoge<br>";
-    }
-    static function staticCallbackMethod()
-    {
-        return "fuga";
-    }
-}
-
 function func($callback)
 {
 	echo call_user_func($callback);	
@@ -32,11 +19,13 @@ class CommandDispatcher {
 	var $sitepath;
 	var $url;
 	var $callback;
+	var $controller;
 	
-	function  CommandDispatcher($command, $sitepath) {
+	function  CommandDispatcher($command, $sitepath, $controller) {		
 		$this->command = $command;
 		$this->sitepath = $sitepath;
 		$this->url = $GLOBALS['url'];
+		$this->controller = $controller;		
 	}
 	
 	function Dispatch() {
@@ -47,9 +36,12 @@ class CommandDispatcher {
 			$param = $param."/".$s;
 		}
 		$this->readyUrlRoute($this->url,$param);
-		
-		$obj = new MyClass();
-		func(array($obj, $this->callback));
+		$this->controller->setParameters(
+								$this->command->getCommandName(),
+								$this->command->getParameters()
+							);
+			
+		func(array($this->controller, $this->callback));		
 	}
 	
 	function readyUrlRoute($url,$request_uri) {
