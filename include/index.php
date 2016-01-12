@@ -17,5 +17,7 @@ include($path."/controller/Command.class.php");
 include($path."/controller/Urlinterpreter.class.php");
 include($path."/controller/Commanddispatcher.class.php");
 include_once($path."/controller/Controller.class.php");  
+include_once($path."/log/log.php");  
 include_once($path."/setting/url.inc.php");  
+
 ?>
