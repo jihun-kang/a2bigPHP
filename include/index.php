@@ -10,7 +10,7 @@
   * @Copyright 2012 a2big.com
   */
 require_once(dirname(__DIR__)."/setting/global.inc.php");
-require($path."/setting/db_config.inc.php"); 
+////require($path."/setting/db_config.inc.php"); 
 require($path."/database/Database.class.php"); 
 require_once($path."/view/Template.class.php");
 include($path."/controller/Command.class.php");
