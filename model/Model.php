@@ -9,7 +9,7 @@
  * @Copyright 2012 a2big.com
  */
 
-include_once("model/Book.php");  
+include_once($path."/model/Book.php");  
   
 class Model {  
     public function getBookList()  

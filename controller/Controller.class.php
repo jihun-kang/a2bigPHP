@@ -9,7 +9,7 @@
   * @Copyright 2012 a2big.com
   */
 
-include_once("model/Model.php");  
+include_once($path."/model/Model.php");  
 
 class Controller {  
     public $model;  

@@ -11,7 +11,7 @@ function write_log($message, $logfile='') {
     // the constant is not defined and there is no log file given as input
     else {
         error_log('No log file defined!',0);
-        return array(status => false, message => 'No log file defined!');
+        return array('status' => false, message => 'No log file defined!');
     }
   }
  
@@ -39,12 +39,12 @@ function write_log($message, $logfile='') {
     fclose($fd);
  
     if($result > 0)
-      return array(status => true);  
+      return array('status' => true);  
     else
-      return array(status => false, message => 'Unable to write to '.$logfile.'!');
+      return array('status' => false, message => 'Unable to write to '.$logfile.'!');
   }
   else {
-    return array(status => false, message => 'Unable to open log '.$logfile.'!');
+    return array('status' => false, message => 'Unable to open log '.$logfile.'!');
   }
 }
 
