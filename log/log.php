@@ -11,7 +11,7 @@
 
 // 
 // Filename of log to use when none is given to write_log
-//define("DEFAULT_LOG","/afs/ir/your-home-directory/logs/default.log");
+define("DEFAULT_LOG","default.log");
 function write_log($message, $logfile='') {
   // Determine log file
   if($logfile == '') {
