@@ -47,7 +47,7 @@ function write_log($message, $logfile='') {
   // Append to the log file
   if($fd = @fopen($logfile, "a")) {
 	//$enc = mb_detect_encoding($message, array("UTF-8","EUC-kr","SJIS"));  
-    $result = fputcsv($fd, array($date, $remote_addr, $request_uri, $enc));
+    //$result = fputcsv($fd, array($date, $remote_addr, $request_uri, $enc));
     
     $result = fputcsv($fd, array($date, $remote_addr, $request_uri, $message));
     fclose($fd);

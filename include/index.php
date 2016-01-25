@@ -18,6 +18,7 @@ include($path."/controller/Urlinterpreter.class.php");
 include($path."/controller/Commanddispatcher.class.php");
 include_once($path."/controller/Controller.class.php");  
 include_once($path."/log/log.php");  
+include_once($path."/upload/upload.php");  
 include_once($path."/setting/url.inc.php");  
 
 ?>
