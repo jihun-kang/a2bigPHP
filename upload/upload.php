@@ -30,22 +30,6 @@ function image_upload_file($name, $file_basename, $type, $size, $tmp_name){
 
 	if (in_array($file_ext,$allowed_file_types) && ($size < 20000000))
 	{	
-		/*
-		$target_path = "uploads/";
-    	$target_path = $target_path . basename( $name );  
-
-		if(move_uploaded_file($tmp_name, $target_path)) {
-        	$message =  "The file ".  basename( $name ). 
-            			" has been uploaded";
-	 		write_log($message, UPLOAD_LOG);				
-		
-    	} 
-   	 	else{
-        	$message = "There was an error uploading the file, please try again!";
-	 		write_log($message, UPLOAD_LOG);				
-    	}
-		*/
-		
 		// Rename file
 		$target_path = "uploads/";
 		$newfilename = md5($file_basename) . $file_ext;
