@@ -1,14 +1,20 @@
 <?
+/**
+ * @Name: views.php
+ * @File Description:  
+ * @link http://www.a2big.com/ 
+ * @author jay,kang <jhis21c@gmail.com>
+ * @Update: 2015-12-18
+ * @version 1.0
+ * @Copyright 2012 a2big.com
+ */
+
 include_once( "models.php");  
-
-
 
 class MyController extends Controller
 {
     public function __construct()    
     {    
-         //$this->model = new Model();  
-		 //echo "MyController __construct<br>";
     }   
 	
 	function test(){

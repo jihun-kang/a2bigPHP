@@ -1,6 +1,6 @@
 <?
 /**
- * @Name: global.inc.php
+ * @Name: urls.php
  * @File Description:  
  * @link http://www.a2big.com/ 
  * @author jay,kang <jhis21c@gmail.com>

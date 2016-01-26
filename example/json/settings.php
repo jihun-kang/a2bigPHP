@@ -1,6 +1,6 @@
 <?
 /**
- * @Name: db_config.inc.php
+ * @Name: settings.php
  * @File Description:  
  * @link http://www.a2big.com/ 
  * @author jay,kang <jhis21c@gmail.com>
