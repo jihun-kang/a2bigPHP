@@ -22,8 +22,8 @@ class Map {
 	    return array($lat, $lng);
 	}
 	
-	function getCoordinatesDaum($api_key,$address){
-		
+	function getCoordinates($api_key,$address){
+		echo "555555";
 	    $address = urlencode($address);
 	    $url = "https://apis.daum.net/local/geo/addr2coord?apikey=$api_key&q=$address&output=json";
 	    $response = file_get_contents($url);
@@ -31,8 +31,6 @@ class Map {
 
 	    $output = var_export($response, true);
 		write_log($output, UPLOAD_LOG);
-		
-		write_log("test...", UPLOAD_LOG);
 		
 	}
 	
