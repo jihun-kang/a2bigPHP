@@ -59,12 +59,12 @@ function image_upload_file($target_path, $thumbnail_path, $name, $file_basename,
 						  'message' => $message);
 			
 	 		write_log($message, UPLOAD_LOG);	
-			
+	 		write_log($ret, UPLOAD_LOG);	
 			
 			
 			//make thumbnail image
 			if($isMakeThum){
-				$ret =  resize($target_path.$newfilename,
+				$ret2 =  resize($target_path.$newfilename,
 						   $thumbnail_path.$newfilename,
 						   100,100);
 			}
