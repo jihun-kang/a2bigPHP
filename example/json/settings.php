@@ -1,4 +1,4 @@
-<?
+<?php
 /**
  * @Name: settings.php
  * @File Description:  

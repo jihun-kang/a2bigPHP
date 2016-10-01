@@ -1,4 +1,4 @@
-<?
+<?php
 /**
  * @Name: global.inc.php
  * @File Description:  

@@ -1,4 +1,4 @@
-<?
+<?php
 /**
  * @Name: index.php
  * @File Description:  

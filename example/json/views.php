@@ -1,4 +1,4 @@
-<?
+<?php
 /**
  * @Name: views.php
  * @File Description:  

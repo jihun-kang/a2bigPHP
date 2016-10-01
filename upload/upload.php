@@ -1,4 +1,4 @@
-<?
+<?php
 /**
  * @Name: upload.php
  * @File Description:

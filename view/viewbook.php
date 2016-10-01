@@ -1,4 +1,4 @@
-<?
+<?php
 /**
  * @Name: viewbook.php
  * @File Description:  

@@ -1,4 +1,4 @@
-<?
+<?php
 /**
  * @Name: EnumMessages.php
  * @File Description:

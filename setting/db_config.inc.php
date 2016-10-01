@@ -1,4 +1,4 @@
-<?
+<?php
 /**
  * @Name: db_config.inc.php
  * @File Description:  
